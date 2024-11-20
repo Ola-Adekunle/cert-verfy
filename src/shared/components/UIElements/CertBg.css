@@ -1,0 +1,41 @@
+.cert-container {
+  width: 100vw;
+  height: 30vh;
+  margin: 1.5rem 0;
+  background: var(--trans-brown-color);
+  border-top: 3px solid var(--green-color);
+  border-bottom: 3px solid var(--green-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative;
+  overflow-x: scroll;
+}
+
+.img-box {
+  height: 80%;
+  width: max-content;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  animation: moveLeftRight 10s ease-out forwards;
+}
+
+.cert-image {
+  height: 100%;
+  width: max-content;
+  max-width: 80vw;
+  max-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(-600%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

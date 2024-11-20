@@ -1,0 +1,17 @@
+:root {
+    --brown-color: #653518;
+    --carton-color: #dec8b0;
+    --black-color: #142a09;
+}
+
+.side-drawer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 70%;
+    background: var(--carton-color);
+    color: var(--black-color);
+    box-shadow: 0 2px 8px var(--black-color);
+}

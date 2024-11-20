@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #d6a95c;
+  --black-color: #142a09;
+  --carton-color: #dec8b0;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.nav-links li {
+  margin: 1rem;
+}
+
+.nav-links a {
+  color: var(--black-color);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+  background: var(--black-color);
+  color: var(--carton-color);
+}
+
+.nav-links button {
+  cursor: pointer;
+  border: 1px solid var(--black-color);
+  color: var(--black-color);
+  padding: 0.5rem;
+}
+
+.nav-links button:focus {
+  outline: none;
+}
+
+.nav-links button:hover,
+.nav-links button:active {
+  background: var(--black-color);
+  color: var(--carton-color);
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .nav-links a {
+    color: var(--carton-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links a.active {
+    color: var(--black-color);
+    background: var(--primary-color);
+    border: 1px solid var(--black-color);
+  }
+
+  .nav-links button {
+    border: 1px solid var(--carton-color);
+    color: var(--carton-color);
+    background: transparent;
+  }
+
+  .nav-links button:hover,
+  .nav-links button:active {
+    background: var(--primary-color);
+    color: var(--black-color);
+  }
+}

@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #d6a95c;
+  --secondary-color: #e4ca9b;
+  --light-brown-color: #ac6717;
+  --brown-color: #653518;
+  --trans-brown-color: #65361888;
+  --black-color: #142a09;
+  --trans-black-color: #1a1506d4;
+  --green-color: #004b12;
+  --shad-green-color: #062f15c4;
+  --light-green-color: #2d5436;
+  --carton-color: #dec8b0;
+  --trans-carton-color: #dec8b0ac;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Podkova:wght@400..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Cinzel", "Podkova", sans-serif;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url("../public/images/3d-view-books.jpg") no-repeat center center;
+  /* background-blend-mode: multiply; */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.users-list::-webkit-scrollbar,
+.cert-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.users-list,
+.cert-container {
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: var(--primary-color);
+  }
+}
+
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.center {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}

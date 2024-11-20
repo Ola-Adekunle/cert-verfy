@@ -1,0 +1,66 @@
+/* Footer.css */
+.footer {
+    background-color: var(--green-color);
+    box-shadow: 0 -2px 6px var(--shad-green-color);
+    color: var(--carton-color);
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Podkova", sans-serif;
+    font-size: 1.8rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    padding: 2.2rem;
+  }
+    
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+
+  .footer-section {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .footer-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    color: var(--carton-color);
+    text-decoration: none;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section a:hover {
+    color: var(--light-brown-color);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--black-color);
+    color: inherit;
+  }
+  
